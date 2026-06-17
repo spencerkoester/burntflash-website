@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BURNTFLASH.WORLDWIDE - Premium Automotive Diagnostics, ECU Tuning & Vehicle Technology Services">
+    <meta name="keywords" content="automotive diagnostics, ECU tuning, CarPlay, Android Auto, vehicle coding">
+    <meta name="theme-color" content="#050505">
+    <title>BURNTFLASH.WORLDWIDE - Automotive Diagnostics & ECU Tuning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Startup Screen -->
+    <div id="startup-screen" class="startup-screen">
+        <div class="startup-container">
+            <div class="startup-logo">█ BURNTFLASH.WORLDWIDE █</div>
+            <div class="startup-text">INITIALIZING VEHICLE SYSTEM...</div>
+            
+            <div class="startup-sequence">
+                <div class="loading-item">
+                    <span class="check">✓</span>
+                    <span class="text">Diagnostics Module Loading</span>
+                </div>
+                <div class="loading-item">
+                    <span class="check">✓</span>
+                    <span class="text">ECU Interface Loading</span>
+                </div>
+                <div class="loading-item">
+                    <span class="check">✓</span>
+                    <span class="text">Vehicle Network Loading</span>
+                </div>
+                <div class="loading-item">
+                    <span class="check">✓</span>
+                    <span class="text">BURNTFLASH.WORLDWIDE ONLINE</span>
+                </div>
+            </div>
+
+            <div class="startup-controls">
+                <button id="skip-startup" class="skip-btn">SKIP ▶</button>
+                <button id="sound-toggle" class="sound-btn">🔇 MUTED</button>
+            </div>
+
+            <div class="startup-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Particles -->
+    <div id="particles-container" class="particles-container"></div>
+
+    <!-- CRT Scanlines Overlay -->
+    <div class="scanlines"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">BURNTFLASH</div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">HOME</a></li>
+                <li><a href="#services" class="nav-link">SERVICES</a></li>
+                <li><a href="#mission" class="nav-link">MISSION</a></li>
+                <li><a href="#gallery" class="nav-link">GALLERY</a></li>
+                <li><a href="#locations" class="nav-link">LOCATIONS</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="animated-grid"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">BURNTFLASH.WORLDWIDE</h1>
+            <p class="hero-subtitle">Automotive Diagnostics • ECU Tuning • Vehicle Technology</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('services')">ENTER GARAGE</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('contact')">GET A QUOTE</button>
+            </div>
+        </div>
+        <div class="glow-effect glow-top"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">OUR SERVICES</h2>
+            
+            <div class="services-grid">
+                <!-- Diagnostics Card -->
+                <div class="service-card">
+                    <div class="card-header">DIAGNOSTICS</div>
+                    <div class="card-icon">⚙️</div>
+                    <ul class="service-list">
+                        <li>Full OBD-II Scans</li>
+                        <li>ABS Diagnostics</li>
+                        <li>Airbag Diagnostics</li>
+                        <li>TPMS Diagnostics</li>
+                        <li>Live Data Monitoring</li>
+                        <li>Vehicle Health Reports</li>
+                    </ul>
+                </div>
+
+                <!-- ECU Tuning Card -->
+                <div class="service-card">
+                    <div class="card-header">ECU TUNING</div>
+                    <div class="card-icon">⚡</div>
+                    <ul class="service-list">
+                        <li>Performance Flashing</li>
+                        <li>Rev Limiter Adjustments</li>
+                        <li>Speed Limiter Adjustments</li>
+                        <li>Launch Control</li>
+                        <li>Burble Tunes</li>
+                        <li>Fuel Optimization</li>
+                    </ul>
+                </div>
+
+                <!-- CarPlay & Android Auto Card -->
+                <div class="service-card">
+                    <div class="card-header">CARPLAY & ANDROID AUTO</div>
+                    <div class="card-icon">📱</div>
+                    <ul class="service-list">
+                        <li>Wired & Wireless Installation</li>
+                        <li>Firmware Flashing</li>
+                        <li>Navigation Updates</li>
+                        <li>Steering Wheel Control</li>
+                        <li>Integration Services</li>
+                        <li>System Optimization</li>
+                    </ul>
+                </div>
+
+                <!-- Coding & Hidden Features Card -->
+                <div class="service-card">
+                    <div class="card-header">CODING & FEATURES</div>
+                    <div class="card-icon">🔐</div>
+                    <ul class="service-list">
+                        <li>DRL Coding</li>
+                        <li>Ambient Lighting</li>
+                        <li>Mirror Folding</li>
+                        <li>Comfort Features</li>
+                        <li>Remote Window Control</li>
+                        <li>Vehicle Personalization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Profile Section -->
+    <section id="mission" class="mission">
+        <div class="container">
+            <div class="mission-card">
+                <div class="memory-card-header">
+                    <div class="memory-icon">💾</div>
+                    <div class="memory-info">
+                        <h3>MISSION PROFILE</h3>
+                        <p>BURNTFLASH.WORLDWIDE DATA BLOCK</p>
+                    </div>
+                </div>
+                
+                <div class="mission-content">
+                    <p class="mission-text">
+                        BURNTFLASH.WORLDWIDE specializes in advanced automotive diagnostics, tuning, coding, electronics integration, and vehicle technology upgrades.
+                    </p>
+                    <p class="mission-text">
+                        Our mission is to bring modern technology, performance enhancements, and advanced software solutions to every vehicle we service.
+                    </p>
+                    <div class="mission-features">
+                        <div class="feature">
+                            <span class="feature-icon">🎯</span>
+                            <span>Advanced Diagnostics</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">⚙️</span>
+                            <span>Expert Tuning</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🔧</span>
+                            <span>Full Integration</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🚀</span>
+                            <span>Performance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">GALLERY</h2>
+            
+            <div class="gallery-tabs">
+                <button class="tab-btn active" data-filter="all">ALL</button>
+                <button class="tab-btn" data-filter="diagnostics">DIAGNOSTICS</button>
+                <button class="tab-btn" data-filter="ecu">ECU TUNING</button>
+                <button class="tab-btn" data-filter="carplay">CARPLAY</button>
+                <button class="tab-btn" data-filter="builds">BUILDS</button>
+                <button class="tab-btn" data-filter="electronics">ELECTRONICS</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="diagnostics">
+                    <div class="gallery-image-placeholder">
+                        <span>📊 DIAGNOSTICS</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="diagnostics">
+                    <div class="gallery-image-placeholder">
+                        <span>🔍 OBD-II SCAN</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="ecu">
+                    <div class="gallery-image-placeholder">
+                        <span>⚡ ECU TUNING</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="ecu">
+                    <div class="gallery-image-placeholder">
+                        <span>🎮 PERFORMANCE</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="carplay">
+                    <div class="gallery-image-placeholder">
+                        <span>📱 CARPLAY INSTALL</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="carplay">
+                    <div class="gallery-image-placeholder">
+                        <span>🔌 WIRELESS AA</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="builds">
+                    <div class="gallery-image-placeholder">
+                        <span>🏎️ BUILD PROJECT</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="builds">
+                    <div class="gallery-image-placeholder">
+                        <span>✨ CUSTOM BUILD</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="electronics">
+                    <div class="gallery-image-placeholder">
+                        <span>💡 LIGHTING MODS</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="electronics">
+                    <div class="gallery-image-placeholder">
+                        <span>🔧 ELECTRONICS</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="diagnostics">
+                    <div class="gallery-image-placeholder">
+                        <span>📈 LIVE DATA</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="builds">
+                    <div class="gallery-image-placeholder">
+                        <span>🎨 INTERIOR MODS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section id="locations" class="locations">
+        <div class="container">
+            <h2 class="section-title">LOCATIONS</h2>
+            
+            <div class="locations-grid">
+                <div class="location-card">
+                    <div class="location-header">📍 CHARLOTTE</div>
+                    <div class="location-details">
+                        <p><strong>Charlotte, North Carolina</strong></p>
+                        <p>Advanced automotive diagnostics and tuning facility</p>
+                    </div>
+                </div>
+
+                <div class="location-card">
+                    <div class="location-header">📍 PHOENIX</div>
+                    <div class="location-details">
+                        <p><strong>Phoenix, Arizona</strong></p>
+                        <p>Full-service automotive technology center</p>
+                    </div>
+                </div>
+
+                <div class="location-card">
+                    <div class="location-header">🌐 REMOTE</div>
+                    <div class="location-details">
+                        <p><strong>Remote Diagnostics</strong></p>
+                        <p>Available nationwide for remote services</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">CONTACT TERMINAL</h2>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="terminal-header">>> BURNTFLASH COMMUNICATIONS <<</div>
+                    
+                    <div class="info-block">
+                        <span class="terminal-label">PHONE:</span>
+                        <a href="tel:480-420-7993" class="terminal-value">480-420-7993</a>
+                    </div>
+                    
+                    <div class="info-block">
+                        <span class="terminal-label">EMAIL:</span>
+                        <a href="mailto:BURNTFLASHWORLDWIDE@gmail.com" class="terminal-value">BURNTFLASHWORLDWIDE@gmail.com</a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">NAME</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">PHONE</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="vehicle-year">VEHICLE YEAR</label>
+                            <input type="text" id="vehicle-year" name="vehicle-year">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="vehicle-make">VEHICLE MAKE</label>
+                            <input type="text" id="vehicle-make" name="vehicle-make">
+                        </div>
+                        <div class="form-group">
+                            <label for="vehicle-model">VEHICLE MODEL</label>
+                            <input type="text" id="vehicle-model" name="vehicle-model">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">SERVICE REQUESTED</label>
+                        <select id="service" name="service" required>
+                            <option value="">SELECT SERVICE</option>
+                            <option value="diagnostics">DIAGNOSTICS</option>
+                            <option value="ecu-tuning">ECU TUNING</option>
+                            <option value="carplay">CARPLAY & ANDROID AUTO</option>
+                            <option value="coding">CODING & FEATURES</option>
+                            <option value="other">OTHER</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">MESSAGE</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary form-submit">REQUEST CONSULTATION</button>
+                </form>
+            </div>
+
+            <div id="success-message" class="success-message">
+                <div class="success-content">
+                    <div class="success-header">▌ BURNTFLASH SYSTEM ONLINE ▐</div>
+                    <p>Your request has been received successfully.</p>
+                    <p>A BURNTFLASH specialist will contact you shortly.</p>
+                    <button class="close-success">CLOSE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>BURNTFLASH.WORLDWIDE</h4>
+                    <p>UPGRADING VEHICLES THROUGH TECHNOLOGY</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>CONTACT</h4>
+                    <p><a href="tel:480-420-7993">480-420-7993</a></p>
+                    <p><a href="mailto:BURNTFLASHWORLDWIDE@gmail.com">BURNTFLASHWORLDWIDE@gmail.com</a></p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>LOCATIONS</h4>
+                    <p>Charlotte, NC</p>
+                    <p>Phoenix, AZ</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; BURNTFLASH.WORLDWIDE. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
